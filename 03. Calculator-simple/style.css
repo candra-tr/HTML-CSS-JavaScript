@@ -1,0 +1,51 @@
+body {
+  background: whitesmoke;
+  color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.main {
+  padding: 5px 0;
+  text-align: center;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  background: tomato;
+  color: black;
+}
+
+input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.inputs input {
+  padding: 1rem 10rem;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+#operator {
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  background: yellowgreen;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  background: yellowgreen;
+  cursor: pointer;
+}
