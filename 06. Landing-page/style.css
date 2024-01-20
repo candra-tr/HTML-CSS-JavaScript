@@ -1,1 +1,228 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;;
+}
 
+body {
+   overflow-x: hidden;
+}
+/* LANDING PAGE SECTION */
+.land-page {
+   min-height: 100vh;
+   position: relative;
+   background-image: url('./img/pexels-pixabay-262353.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/* HEADER */
+.land-page header {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 30px;
+}
+
+/* NAVBAR LOGO */
+.land-page header .logo h2 a{
+   font-size: 32px;
+   font-weight: 600;
+   text-decoration: none;
+   color: white;
+   padding-right: 390px;
+}
+
+/* NAVBAR MENU */
+nav ul {
+   list-style: none;
+   display: flex;
+}
+
+
+nav ul li a {
+   text-decoration: none;
+   color: white;
+   margin-left: 20px;   
+   font-size: 12px;
+   font-weight: 450;
+   border-bottom: 2px solid transparent;
+   transition: border-bottom .3s ease, font-weight 0.3s ease;
+   letter-spacing: 1.5px;
+   display: inline-block;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+/* DROPDOWN SERVICE */
+nav ul li .dropdown {
+   background-color: rgba(137, 137, 137, 0.400); 
+   position: absolute;
+   z-index: 999; 
+   display: none;
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+nav ul li:hover .dropdown {
+   display: block;
+   opacity: 1;
+   visibility: visible;
+}
+
+nav ul li .dropdown li {
+   color: white;
+   text-decoration: none;
+   padding: 10px;
+   display: block;
+   transition: color 0.3s ease; 
+}
+
+nav ul li .dropdown li:hover {
+   font-weight: bold;
+   background-color: rgba(137, 137, 137, .5); 
+}
+
+nav ul li a:hover,
+nav ul li:focus {
+   border-bottom: 2px solid white;
+   font-weight: 700;
+}
+
+/* ICON NAVBAR */
+.head-icon {
+   margin-right: 2px;
+   display: flex;
+   align-items: center; 
+}
+
+.head-icon a {
+   background: white;
+   text-decoration: none;
+   letter-spacing: 1px;
+   color: black;
+   border: 1px solid white;
+   padding: 5px;
+   margin-left: 5px;
+   border-radius: 30px;
+   font-size: 12px;
+   text-transform: uppercase;
+   transition: background .4s ease; 
+}
+
+.head-icon a:hover {
+   background: transparent;
+}
+
+
+.head-icon a .fa-angle-down {
+   vertical-align: -2px;
+}
+
+.head-icon .right {
+   padding-right: 5px ;
+   font-size: 16px;
+}
+
+nav ul li a .fa-angle-down {
+   vertical-align: -2px;
+}
+
+/* NVABAR LOGIN */
+.btn a {
+   background: transparent;
+   text-decoration: none;
+   letter-spacing: 1px;
+   color: white;
+   border: 1px solid white;
+   padding: 9px 20px;
+   border-radius: 30px;
+   font-size: 14px;
+   transition: background .4s ease; 
+}
+
+.btn:hover a {
+   border: 1px solid white;
+   color: black;
+   background: white;
+   transition: .3s;
+} 
+
+/* CONTENT */
+.content {
+   width: 100%;
+   padding-top: 30px;
+   padding-left: 30px;
+}
+
+.content .main-text {
+   position: relative;
+   margin-bottom: 50px;
+}
+
+.content .main-text h6 {
+   font-size: 16px;
+   font-weight: 400;
+   color: white;
+   text-transform: uppercase;
+   font-weight: bold;
+   letter-spacing: 1px;
+}
+
+.content .main-text h3 {
+   line-height: 1;
+   font-size: 24px;
+   font-weight: 600;
+   color: white;
+   letter-spacing: 1px;
+   margin-bottom: 30px;
+}
+
+.content .main-text h2 {
+   font-size: 60px;
+   line-height: 1;
+   color: white;
+   margin: 0 0 30px;
+}
+
+.content .main-text p {
+   font-size: 15px;
+   max-width: 100%;
+   width: 480px;
+   color: white;
+   line-height: 1.8;
+   letter-spacing: 0.2px;
+   margin-bottom: 30px;
+}
+
+/* BUTTON CONTENT */
+.content .main-text a {
+   display: inline-block;  
+   text-decoration: none;
+   color: black;
+   background: white;
+   border: 1px solid white;
+   padding: 9px 25px;
+   line-height: 1.5;
+   border-radius: 30px;
+   font-size: 16px;
+   font-weight: 500;
+   transition: background .4s ease; 
+}
+
+.content .main-text a.regist {
+   background: #A2FF86;
+   border: 1px solid #A2FF86;
+   margin-right: 10px;
+}
+
+.content .main-text a:hover {
+   border: 1px solid white;
+   background: transparent;
+   color: white;
+   transition: .4s;
+}
